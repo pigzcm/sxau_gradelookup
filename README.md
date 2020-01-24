@@ -1,5 +1,11 @@
 ==================================================
 # 山西农业大学手机成绩查询
+[Github国际地址](https://github.com/pigzcm/sxau_gradelookup.git)&nbsp;&nbsp;&quot;https://github.com/pigzcm/sxau_gradelookup.git&quot;
+<br>
+
+[Gitee码云地址](https://gitee.com/yfdc/sxau_gradelookup.git)&nbsp;&nbsp;&quot;https://gitee.com/yfdc/sxau_gradelookup.git&quot;
+<br>
+
 山西农业大学学生教务系统是学生用来查成绩、选课、修改密码、教学评估等的系统，是基于JSP网页的应用程序。由于网页没有针对移动设备（特别是手机）进行优化，在手机端查看时很不舒服，需要经常调整页面比例。针对这个弱点，利用所学习的Android知识，查看教务系统的后台获取JSON数据，使查询成绩功能更好地适配安卓客户端。<br>
 <p>山西农业大学软件学院移动互联1703班<br>
 张乘铭
