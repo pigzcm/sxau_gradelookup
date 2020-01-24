@@ -1,0 +1,11 @@
+*.iml
+.idea
+build
+grade_lookup/build
+grade_lookup/.cxx
+local.properties
+.gradle
+init.exe
+*.sln
+*.yml
+gradelookup/src/main/up.png
