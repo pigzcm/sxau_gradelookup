@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.sxau.soft.andsix">
+	<!-- 山西农业大学 -->
+	<permission
+		android:name="yfdc.ll.pp"
+		android:description="@string/app_name"
+		android:protectionLevel="normal" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="yfdc.ll.pp" />
+	<application
+		android:name=".Defapp"
+		android:allowBackup="true"
+		android:fullBackupContent="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:networkSecurityConfig="@xml/networkconfig"
+		android:usesCleartextTraffic="true">
+		<activity
+			android:name=".MainActivity"
+			android:label="@string/app_name"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.LAUNCHER" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<service
+			android:name=".Testserv"
+			android:description="@string/app_name"
+			android:exported="true"
+			android:permission="yfdc.ll.pp">
+			<intent-filter>
+				<action android:name="yfdc.ghost.TestService" />
+			</intent-filter>
+		</service>
+	</application>
+</manifest>
