@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 热烈庆祝中华人民共和国成立70周年 -->
+<resources>
+	<string name="nav_header_desc" translatable="false" formatted="false">"导航窗格"</string>
+	<string name="app_name" translatable="false" formatted="false">"山西农业大学手机成绩查询"</string>
+	<string name="navigation_drawer_open" translatable="false" formatted="false">"打开导航抽屉"</string>
+	<string name="navigation_drawer_close" translatable="false" formatted="false">"关闭导航抽屉"</string>
+	<string name="str_history_grade" translatable="false" formatted="false">"历年成绩"</string>
+	<string name="str_allpassed_grade" translatable="false" formatted="false">"全部及格成绩"</string>
+	<string name="str_notpassed_grade" translatable="false" formatted="false">"不及格成绩"</string>
+	<string name="str_menu_help" translatable="false" formatted="false">"帮助"</string>
+	<string name="str_menu_about" translatable="false" formatted="false">"关于"</string>
+	<string name="str_menu_exit" translatable="false" formatted="false">"退出"</string>
+	<string name="str_login" translatable="false" formatted="false">"登录"</string>
+	<string name="str_not_login2" translatable="false" formatted="false">"未登录"</string>
+	<string name="str_stu_num" translatable="false" formatted="false">"学号"</string>
+	<string name="str_pwd" translatable="false" formatted="false">"密码"</string>
+	<string name="str_captcha" translatable="false" formatted="false">"验证码"</string>
+	<string name="str_not_login" translatable="false" formatted="false">"您还没有登录呢, 请点击右下角登陆按钮登陆"</string>
+	<string name="no_unpass_str" translatable="false" formatted="false">"恭喜, 您无不及格成绩"</string>
+	<string name="课程号" translatable="false" formatted="false">"课程号:"</string>
+	<string name="课程号示例" translatable="false" formatted="false">"000000000"</string>
+	<string name="课程名" translatable="false" formatted="false">"课程名:"</string>
+	<string name="课程名示例" translatable="false" formatted="false">"示例示例示例示例示例示例示例示例示例示例(例)"</string>
+	<string name="学期" translatable="false" formatted="false">"学期:"</string>
+	<string name="学期示例" translatable="false" formatted="false">"0000&#8211;0000 例"</string>
+	<string name="成绩" translatable="false" formatted="false">"成绩:"</string>
+	<string name="成绩示例" translatable="false" formatted="false">"000.000"</string>
+	<string name="查询" translatable="false" formatted="false">"查询"</string>
+	<string name="选择学期" translatable="false" formatted="false">"选择学期:"</string>
+</resources>

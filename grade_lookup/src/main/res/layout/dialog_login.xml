@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sxau.soft.andsix.LoginLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="5sp"
+			android:layout_marginLeft="5sp"
+			android:layout_marginEnd="5sp"
+			android:layout_marginRight="5sp"
+			android:text="@string/str_login"
+			android:textColor="#ff000000"
+			android:textSize="24sp" />
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/username_hint"
+			android:layout_width="200sp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="5sp"
+			android:layout_marginLeft="5sp"
+			android:layout_marginTop="5sp"
+			android:layout_marginEnd="5sp"
+			android:layout_marginRight="5sp"
+			app:counterEnabled="true"
+			app:counterMaxLength="11"
+			app:hintAnimationEnabled="true">
+
+			<EditText
+				android:id="@+id/username_ipu"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:digits="0123456789"
+				android:ems="10"
+				android:hint="@string/str_stu_num"
+				android:inputType="number"
+				android:maxLength="11"
+				android:textSize="14sp" />
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/passwd_hint"
+			android:layout_width="200sp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="5sp"
+			android:layout_marginLeft="5sp"
+			android:layout_marginTop="5sp"
+			android:layout_marginEnd="5sp"
+			android:layout_marginRight="5sp"
+			app:hintAnimationEnabled="true"
+			app:passwordToggleEnabled="true"
+			app:passwordToggleTint="#000000">
+
+			<EditText
+				android:id="@+id/passwd_ipu"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/str_pwd"
+				android:inputType="textPassword"
+				android:textSize="14sp" />
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<LinearLayout
+			android:layout_width="200sp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="5sp"
+			android:layout_marginLeft="5sp"
+			android:layout_marginTop="5sp"
+			android:layout_marginEnd="5sp"
+			android:layout_marginRight="5sp"
+			android:orientation="horizontal">
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/capt_hint"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:counterEnabled="true"
+				app:counterMaxLength="4"
+				app:hintAnimationEnabled="true">
+
+				<EditText
+					android:id="@+id/capt_ipu"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:digits="ABCDEFGHIJKLMNNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+					android:ems="4"
+					android:hint="@string/str_captcha"
+					android:inputType="text"
+					android:maxLength="4"
+					android:textSize="14sp" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<ImageView
+				android:id="@+id/img_capt_vw"
+				android:layout_width="120dp"
+				android:layout_height="33dp"
+				android:layout_gravity="center_vertical"
+				android:layout_marginStart="5sp"
+				android:layout_marginLeft="5sp"
+				android:layout_marginEnd="5sp"
+				android:layout_marginRight="5sp"
+				android:clickable="true"
+				android:contentDescription="@null"
+				android:focusable="true"
+				android:src="@drawable/waiting" />
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/btn_login"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginStart="5sp"
+			android:layout_marginLeft="5sp"
+			android:layout_marginTop="5sp"
+			android:layout_marginEnd="5sp"
+			android:layout_marginRight="5sp"
+			android:gravity="center"
+			android:text="@string/str_login"
+			android:textAllCaps="false"
+			android:textSize="14sp" />
+	</LinearLayout>
+</com.sxau.soft.andsix.LoginLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?><!-- 热烈庆祝中华人民共和国成立70周年 -->
+<resources>
+	<color name="colorPrimary">#ff008577</color>
+	<color name="colorPrimaryDark">#ff00574B</color>
+	<color name="colorAccent">#FF185E97</color>
+</resources>

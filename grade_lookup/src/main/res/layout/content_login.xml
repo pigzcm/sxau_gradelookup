@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/mconl"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:context=".MainActivity"
+	tools:showIn="@layout/app_bar_login">
+	<LinearLayout
+		android:id="@+id/notlogin"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:background="#FFFFFFFF"
+		android:orientation="vertical"
+		android:visibility="visible"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent">
+		<TextView
+			android:id="@+id/tv_result"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:text="@string/str_not_login"
+			android:textColor="#000000"
+			android:textSize="14sp" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/login_success"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:background="#ffffffff"
+		android:orientation="vertical"
+		android:visibility="gone"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:orientation="horizontal">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_marginStart="5sp"
+				android:layout_marginLeft="5sp"
+				android:layout_marginEnd="5sp"
+				android:layout_marginRight="5sp"
+				android:text="@string/选择学期"
+				android:textColor="#000000" />
+			<Spinner
+				android:id="@+id/semester_spinner"
+				android:layout_width="200dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical" />
+			<Button
+				android:id="@+id/btn_lookup"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="3sp"
+				android:layout_marginEnd="0sp"
+				android:text="@string/查询"
+				android:textSize="14sp" />
+		</LinearLayout>
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/list_grade_view"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:layout_margin="12dp"
+			android:visibility="gone" />
+	</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

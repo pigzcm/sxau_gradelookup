@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/app_grade_bar_login"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="@color/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay"
+			app:title="@string/app_name" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<include
+		android:id="@+id/grade_view"
+		layout="@layout/content_login" />
+	<TextView
+		android:id="@+id/threadview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#000000"
+		android:text="@string/app_name"
+		android:textColor="#ffffff"
+		android:textSize="6sp"
+		app:layout_constraintBottom_toBottomOf="@id/app_grade_bar_login"
+		app:layout_constraintEnd_toEndOf="@id/app_grade_bar_login"
+		app:layout_constraintStart_toStartOf="@id/app_grade_bar_login"
+		app:layout_constraintTop_toTopOf="@id/app_grade_bar_login" />
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/fab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|end"
+		android:layout_margin="@dimen/fab_margin"
+		app:backgroundTint="#cccccc"
+		app:srcCompat="@drawable/icon_login" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
